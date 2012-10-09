@@ -92483,7 +92483,7 @@
 		</upDownOperator>
 		</operators>
 	<!-- Define MCMC                                                             -->
-	<mcmc id="mcmc" chainLength="11000" autoOptimize="true">
+	<mcmc id="mcmc" chainLength="1111000" autoOptimize="true">
 		<posterior id="posterior">
 			<prior id="prior">
 				<gammaPrior shape="0.05" scale="40.0" offset="0.0">
@@ -96583,7 +96583,7 @@
 				<parameter idref="clock.rate"/>
 			</column>
 		</log>
-		<log id="fileLog" logEvery="1000" fileName="goringtreeall.log">
+		<log id="fileLog" logEvery="11000" fileName="goringtreeall.log">
 			<posterior idref="posterior"/>
 			<prior idref="prior"/>
 			<likelihood idref="likelihood"/>
