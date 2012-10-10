@@ -636,7 +636,7 @@
 		</upDownOperator>
 		</operators>
 	<!-- Define MCMC                                                             -->
-	<mcmc id="mcmc" chainLength="11111000" autoOptimize="true">
+	<mcmc id="mcmc" chainLength="111000" autoOptimize="true">
 		<posterior id="posterior">
 			<prior id="prior">
 				<gammaPrior shape="0.05" scale="40.0" offset="0.0">
@@ -725,7 +725,7 @@
 	<!-- Constraints - End Boolean Likelihood -->
 
 			</prior>
-			<likelihood id="likelihood">
+			<likelihood id="likelihood" threads="8">
 				<treeLikelihood idref="treeLikelihood"/>
 			</likelihood>
 		</posterior>
