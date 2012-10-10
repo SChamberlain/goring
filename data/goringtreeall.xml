@@ -92483,7 +92483,7 @@
 		</upDownOperator>
 		</operators>
 	<!-- Define MCMC                                                             -->
-	<mcmc id="mcmc" chainLength="1111000" autoOptimize="true">
+	<mcmc id="mcmc" chainLength="511000" autoOptimize="true">
 		<posterior id="posterior">
 			<prior id="prior">
 				<gammaPrior shape="0.05" scale="40.0" offset="0.0">
@@ -96597,7 +96597,7 @@
 			<speciationLikelihood idref="speciation"/>
 		</log>
 		<!-- write tree log to file                                                  -->
-		<logTree id="treeFileLog" logEvery="11000" nexusFormat="true" fileName="goringtreeall.trees" sortTranslationTable="true">
+		<logTree id="treeFileLog" logEvery="5000" nexusFormat="true" fileName="goringtreeall.trees" sortTranslationTable="true">
 			<treeModel idref="treeModel"/>
 			<strictClockBranchRates idref="branchRates"/>
 			<posterior idref="posterior"/>
